@@ -1,0 +1,31 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    background-color:pink;
+}
+h2{
+    font-size: 30px;
+    padding:5px
+}
+.timer-container{
+    width:100%;
+    display:flex;
+}
+.timer-name{
+
+}
+.timer {
+    margin:0;
+}
+.button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.button img{
+    width: 80%;
+}
