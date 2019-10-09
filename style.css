@@ -6,6 +6,9 @@ body, html{
     margin:0;
     font-family: 'Courier New', Courier, monospace;
 }
+
+
+/* *START OF STYLING FOR APPLICATION HEADING */
 .title{
     width: 80%;
     text-align: center;
@@ -14,6 +17,12 @@ body, html{
 .title h1{
     color: green;
 }
+.add{
+    transform: rotate(45);
+}
+
+
+/* *START OF INPUT FORM FOR TIMERS */
 .container{
     display:flex;
     width:100%;
@@ -21,8 +30,7 @@ body, html{
 .timer-input{
     width:40%;
     display: inline-block;
-    margin: 0 5% 0 5%;
-
+    margin: 0 5%;
 }
 .timer-input input, .timer-input select{
     width: 90%;
@@ -33,15 +41,24 @@ body, html{
 .input_label label{
     font-size: 80px;
 }
-.timer-list{
-    width:100%;
-    display:flex;
-}
-.timer-name{
 
+
+/* *START OF STYLING FOR LIST OF ACTIVE TIMERS */
+.timer-list h2{
+    margin: auto;
 }
-.timer {
-    margin:0;
+.timer-list{
+    width:90%;
+    display:flex;
+    margin: auto;
+}
+.timer-title{
+    width: 35%;
+    text-align: left;
+}
+.timer-type, .timer-count{
+    width: 13%;
+    margin: auto;
 }
 .button{
     background: none;
@@ -50,7 +67,8 @@ body, html{
 	padding: 0;
 	font: inherit;
 	cursor: pointer;
-	outline: inherit;
+    outline: inherit;
+    width: 3%;
 }
 .button img{
     width: 80%;
