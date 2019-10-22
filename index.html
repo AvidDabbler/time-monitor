@@ -13,15 +13,17 @@
             <h1>Time Keeper</h1>
         </div>
 
-            <div class="container">
-                <div class="timer-input">
-                    <label for=Title class="input-label"><h2>Timer Name: </h2></label>
-                    <input id=Title type="text">
-                </div>
-
-                <div class="timer-input">
-                    <label for=timer-type class="input-label"><h2>Work Type: </h2></label>
-                        <select name="type" id="timer-type">
+        <div class="inputs">
+            <div class="title-input input-container">
+                    <label for=Title><h2>Timer Name: </h2></label>
+                    <div class="timer-input input">
+                        <input id="title" type="text">
+                    </div>
+            </div>
+            <div class="type-input input-container">
+                <label for=timer-type class="input-label"><h2>Work Type: </h2></label>
+                <div class="timer-input input-type">
+                        <select name="type" id="timer-type" class="input">
                             <option value="analysis">Analysis</option>
                             <option value="development">Development</option>
                             <option value="emails">Emails</option>
@@ -29,33 +31,35 @@
                             <option value="design">Design</option>
                         </select>
                 </div>
+            </div> 
+            <div class="add input-container">
+                <button class="add" onclick="addData()"><img id='add' src="img/plus.svg"></button>
+            </div> 
+        </div>
+        
+        <div id="active-timers">
+            <div id="Timer-1" class="timer-list">
+                <div class="timer-list" id="timer-1">
+                        <h2 class="timer-title" id="timer-title-1">Title VI Analysis Developement</h2>
+                
+                        <svg height="100" width="20"><line x1="10" y1="35" x2="10" y2="65" style="stroke:black;stroke-width:2" /></svg>  
+                            
+                        <h2 class="timer-type" id="timer-type-1">Coffee</h2>
 
-                <button class="button add" onclick=""><img id='delete' src="img/delete.svg"></button>    
-
-            </div>
-
-        <div id="Timer-1" class="timer-list">
-            <div class="timer-list" id="timer-1">
-
-                    <h2 class="timer-title" id="timer-title-1">Title VI Analysis Developement</h2>
-            
-                    <svg height="100" width="20"><line x1="10" y1="35" x2="10" y2="65" style="stroke:black;stroke-width:2" /></svg>  
+                        <svg height="100" width="20"><line x1="10" y1="35" x2="10" y2="65" style="stroke:black;stroke-width:2" /></svg>  
                         
-                    <h2 class="timer-type" id="timer-type-1">Coffee</h2>
+                        <h2 class="timer-count" class="timer-count-1">00:04:20</h2>
+                        
+                        <svg height="100" width="20"><line x1="10" y1="35" x2="10" y2="65" style="stroke:black;stroke-width:2" /></svg>
 
-                    <svg height="100" width="20"><line x1="10" y1="35" x2="10" y2="65" style="stroke:black;stroke-width:2" /></svg>  
-                    
-                    <h2 class="timer-count" class="timer-count-1">00:04:20</h2>
-                    
-                    <svg height="100" width="20"><line x1="10" y1="35" x2="10" y2="65" style="stroke:black;stroke-width:2" /></svg>
+                        <button class="button list" onclick="playClick()"><img id='play-control' src="img/play.svg"></button>
+            
+                        <svg height="100" width="20"><line x1="10" y1="35" x2="10" y2="65" style="stroke:black;stroke-width:2" /></svg>
+            
+                        <button class="button" onclick="deleteClick()"><img id='delete' src="img/delete.svg"></button>    
+                </div>
+            </div> 
 
-                    <button class="button" onclick="playClick()"><img id='play-control' src="img/play.png"></button>
-        
-                    <svg height="100" width="20"><line x1="10" y1="35" x2="10" y2="65" style="stroke:black;stroke-width:2" /></svg>
-        
-                    <button class="button" onclick="deleteClick()"><img id='delete' src="img/delete.svg"></button>    
-
-            </div>
         </div>   
     </div>
 

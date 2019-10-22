@@ -10,57 +10,50 @@ body, html{
 
 /* *START OF STYLING FOR APPLICATION HEADING */
 .title{
-    width: 80%;
+    width: 90%;
     text-align: center;
-    margin: auto;
+    margin:auto;
 }
 .title h1{
-    color: green;
+    color:green;
 }
-.add{
-    transform: rotate(45);
-}
-
 
 /* *START OF INPUT FORM FOR TIMERS */
-.container{
+
+.inputs{
     display:flex;
-    width:100%;
+    width:90%;
+    justify-content: space-around;
+    margin:auto;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: slategrey;
+    border: solid blue;
 }
-.timer-input{
+.input-container{
+    display:flex;
+    flex-direction: column;
+}
+.title-input{
     width:40%;
-    display: inline-block;
-    margin: 0 5%;
+}
+.type-input{
+    width:30%;
+}
+.add{
+    justify-content: end;
 }
 .timer-input input, .timer-input select{
-    width: 90%;
     padding: 12px 20px;
     font-size: 17px;
     font-family: 'Courier New', Courier, monospace;
+    width: 100%;
 }
-.input_label label{
-    font-size: 80px;
+.add img{
+    align-items: end;
+    width: 50%;
 }
-
-
-/* *START OF STYLING FOR LIST OF ACTIVE TIMERS */
-.timer-list h2{
-    margin: auto;
-}
-.timer-list{
-    width:90%;
-    display:flex;
-    margin: auto;
-}
-.timer-title{
-    width: 35%;
-    text-align: left;
-}
-.timer-type, .timer-count{
-    width: 13%;
-    margin: auto;
-}
-.button{
+.button, .add{
     background: none;
 	color: inherit;
 	border: none;
@@ -68,20 +61,29 @@ body, html{
 	font: inherit;
 	cursor: pointer;
     outline: inherit;
+}
+
+/* *START OF STYLING FOR LIST OF ACTIVE TIMERS */
+
+.timer-list{
+    width:90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+.timer-title{
+    width: 35%;
+}
+.timer-type, .timer-count{
+    width: 13%;
+}
+.button{
     width: 3%;
 }
 .button img{
     width: 80%;
-}
-#list-container{
-    height: 90%;
-}
-.timer-list ul{
-    display: inline;
-    height: 200px;
-
-}
-.timer-list li{
-    display: inline;
-
+    
 }
